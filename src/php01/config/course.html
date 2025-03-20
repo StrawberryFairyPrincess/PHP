@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHPデータ受け取り</title>
+</head>
+<body>
+    <!-- http://localhost/php01/config/course.html -->
+
+    <!-- データ送信方法 -->
+    <!-- GET：データがURLで引き渡される -->
+    <!-- POST：データがURLで引き渡されない -->
+    
+    <!-- <form action="送信先" method="get（初期値） / post">
+        ・・・ フォームのコントロール部品 ・・・
+    </form> -->
+    <!-- <form action="course.php" method="POST"> -->
+    <form action="course.php" method="GET">
+        <!-- <input type="部品の種類" name="部品の名前" value="初期値 / 送信されるデータ / ボタンのラベル"> -->
+        <label>会社名：
+            <input type="text" name="company">
+        </label>
+        <br />
+        <input type="submit" name="submit" value="送信する" />
+    </form>
+
+
+
+
+
+
+
+</body>
+</html>
